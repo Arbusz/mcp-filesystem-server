@@ -84,7 +84,7 @@ func NewFilesystemServer(allowedDirs []string) (*FilesystemServer, error) {
 	s.server.AddTool(mcp.NewTool(
 		"read_file",
 		mcp.WithDescription("Read the complete contents of a file from the file system."),
-		mcp.WithString("path",
+		mcp.WithString("Path",
 			mcp.Description("Path to the file to read"),
 			mcp.Required(),
 		),
